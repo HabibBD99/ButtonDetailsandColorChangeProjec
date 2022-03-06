@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+...Loop Array this Keyword Dynamic Project...
+</title>
+
+<style type="text/css">
+.Bdy{
+
+ transition:1s;
+ background-color:grey;
+ 
+ 
+ }
+
+</style>
+
+<script>
+
+var btn =[
+
+   "Green",
+   "Red",
+   "Blue",
+   'orange'
+
+  ];
+  
+  var Bdy = document.querySelector(".Bdy");
+    Bdy.style.backgroundColor=btn[0];
+       
+  
+  var Color = document.querySelector(".Bdy");
+  
+  Color.addEventListener("click",function(){
+  document.write("Habib");
+  
+  })
+  
+
+       
+  
+  </script>
+
+
+</head>
+ <body class="Bdy"> 
+  <p align="center">...Loop Array this Keyword Dynamic Project...</P>
+
+  
+ <h3 align="center" id="H3">Enter Your Press Button</h3>
+  
+  <div align="center">
+  
+  
+  <button onclick="Hb(this.value)" id="Btn" value="Green">
+  <script>document.write(btn[0]);</script>
+  </button>
+  
+  
+  
+  <button onclick="Hb(this.value)" id="Btn" value="Red">
+  <script>document.write(btn[1]);</script>
+  </button>
+  
+  
+  <button onclick="Hb(this.value)" id="Btn" value="Blue">
+  <script>document.write(btn[2]);</script>
+  </button>
+  
+  
+  
+  <button onclick="Hb(this.value)" id="Btn" value="Orange">
+  <script>document.write(btn[3]);</script>
+  </button>
+  
+
+  
+  </div>
+  
+  <script>
+  
+  //Background Color Design...
+  
+  function Hb(value){
+  var Color = document.querySelector(".Bdy");
+      Color.style.backgroundColor=value;
+  
+   }
+ 
+    
+     
+	 //H3 Text Design Programming...
+	 	   
+         for(var i=0; i< 4; i++){
+
+   document.querySelectorAll("#Btn")[i].addEventListener("click", function(){
+    var textButton = this.value;
+    document.querySelector("h3").innerHTML = textButton + " Button is Clicked";
+    var Bdy = document.querySelector("body").innerHTML = style.backgroundColor= textButton;
+      
+  
+            });
+
+
+     }
+
+   
+     
+  </script>
+ 
+  
+</body>
+</html>
